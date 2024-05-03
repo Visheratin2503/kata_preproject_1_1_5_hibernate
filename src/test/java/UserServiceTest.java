@@ -8,7 +8,6 @@ import java.util.List;
 
 public class UserServiceTest {
     private final UserService userService = new UserServiceImpl();
-
     private final String testName = "Ivan";
     private final String testLastName = "Ivanov";
     private final byte testAge = 5;
@@ -98,5 +97,4 @@ public class UserServiceTest {
             Assert.fail("При тестировании очистки таблицы пользователей произошло исключение\n" + e);
         }
     }
-
 }
