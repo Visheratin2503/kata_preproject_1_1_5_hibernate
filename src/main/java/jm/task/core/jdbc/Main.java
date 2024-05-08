@@ -1,5 +1,6 @@
 package jm.task.core.jdbc;
 
+import jm.task.core.jdbc.HibernateUtil.HibernateUtil;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
@@ -38,5 +39,7 @@ public class Main {
         // Удаление таблицы
         userService.dropUsersTable();
         System.out.println("Таблица пользователей удалена.");
+
+        HibernateUtil.sessionClose();
     }
 }
