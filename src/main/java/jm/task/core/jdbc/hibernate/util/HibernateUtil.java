@@ -1,4 +1,4 @@
-package jm.task.core.jdbc.HibernateUtil;
+package jm.task.core.jdbc.hibernate.util;
 
 import jm.task.core.jdbc.model.User;
 import org.hibernate.SessionFactory;
@@ -43,7 +43,6 @@ public class HibernateUtil {
         return sessionFactory;
     }
     public static void sessionClose() {
-        // Закрытие фабрики сессий и освобождение всех ресурсов Hibernate
         if (sessionFactory != null) {
             sessionFactory.close();
             System.out.println("Сессия успешно закрыта");
